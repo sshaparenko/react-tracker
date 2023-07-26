@@ -8,7 +8,7 @@ const Task = () => {
       whileTap={{ scale: 1.01 }}
       className="task w-full text-white flex flex-row justify-between rounded-md p-5"
     >
-      <img src="src/assets/Icon-Monitor.svg" alt="" />
+      <img src="images/Icon-Monitor.svg" alt="" />
       <div className="task-info w-8/12">
         <h2 className="text-lg">UI Design</h2>
         <div className="task-tags text-sm flex flex-row gap-1">
@@ -23,7 +23,7 @@ const Task = () => {
       <div className="continue-track flex flex-col gap-3">
         <p>00:32:10</p>
         <button className="self-end">
-          <img src="src/assets/play.svg" alt="" />
+          <img src="images/play.svg" alt="" />
         </button>
       </div>
     </motion.div>
