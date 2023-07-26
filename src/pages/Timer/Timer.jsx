@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Header from "../../components/Header/Header";
+import { motion } from "framer-motion";
 import './Timer.css';
 
 const Timer = () => {
@@ -77,15 +79,24 @@ const Timer = () => {
   }
 
   return (
-    <section className="timer-section  
-    text-white self-center justify-self-center">
-      {renderTimer()}
-      <section className="buttons flex flex-row justify-evenly">
-        <button className="timer-button bg-gray-800 hover:bg-gray-700 rounded-full mr-3 p-4" 
-        onClick={() => {
-          handleStartPause();
-        }}>{renderPauseButton()}</button>
-        <button className="timer-button bg-gray-800 hover:bg-gray-700 rounded-full mr-3 p-4" onClick={handleStop}><img src="src/assets/stop.svg" alt=""/></button>
+    <section className="timer min-h-full flex flex-col gap-52">
+      <Header />
+      <section className="timer-section  
+      text-[#9B51E0] self-center">
+        {renderTimer()}
+        <section className="buttons flex flex-row justify-evenly">
+          <motion.button 
+          whileHover={{ scale: 1.2, backgroundColor: '#9B51E0' }}
+          whileTap={{ scale: 1 }}
+          className="timer-button bg-gray-800 rounded-full mr-3 p-4" 
+          onClick={() => {
+            handleStartPause();
+          }}>{renderPauseButton()}</motion.button>
+          <motion.button 
+          whileHover={{ scale: 1.2, backgroundColor: '#9B51E0' }}
+          whileTap={{ scale: 1 }}
+          className="timer-button bg-gray-800 rounded-full mr-3 p-4" onClick={handleStop}><img src="src/assets/stop.svg" alt=""/></motion.button>
+        </section>
       </section>
     </section>
   );
