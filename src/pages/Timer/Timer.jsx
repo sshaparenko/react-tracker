@@ -30,9 +30,9 @@ const Timer = () => {
 
   function renderPauseButton() {
     if (started) {
-      return <img src="src/assets/pause.svg" alt="" />;
+      return <img src="../src/assets/pause.svg" alt="" />;
     } else {
-      return <img src="src/assets/play.svg" alt="" />;
+      return <img src="../src/assets/play.svg" alt="" />;
     }
   }
 
@@ -110,7 +110,7 @@ const Timer = () => {
             className="timer-button bg-gray-800 rounded-full mr-3 p-4"
             onClick={handleStop}
           >
-            <img src="src/assets/stop.svg" alt="" />
+            <img src="../src/assets/stop.svg" alt="" />
           </motion.button>
         </section>
       </section>
