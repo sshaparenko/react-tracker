@@ -31,7 +31,7 @@ const ActiveTask = () => {
         </p>
       </div>
       <div className="mt-4 flex flex-row gap-2">
-        <img src="src/assets/logo.svg" alt="" />
+        <img src="../../src/assets/logo.svg" alt="" />
         <p>Project Title</p>
       </div>
     </motion.div>
